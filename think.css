@@ -1,0 +1,278 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.header {
+    color: orangered;
+    display: inline;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav{
+    color: wheat;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+nav ul li a:hover {
+    background-color: darkgoldenrod;
+}
+
+#home {
+    text-align: center;
+    background-color: orangered;
+    color: aliceblue;
+    padding: 100px;
+}
+
+#home a {
+    background-color: white;
+    color: orangered;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+#home a:hover
+{
+    background-color: rgb(252, 192, 80);
+}
+
+.titles {
+    color: orangered;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-line {
+    margin: 0px 100px 30px 100px;
+    border: 1px solid orangered;
+}
+
+.mahadul {
+    display: flex;
+    justify-content: center;
+}
+
+.laptops {
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.laptops:hover {
+    border: 2px solid orangered;
+}
+
+.laptop-type {
+    padding: 3px;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.product-size {
+    width: 150px;
+    display: block;
+    margin: 30px;
+    object-fit: cover;
+}
+
+.cost {
+    font-weight: bold;
+    color: orangered;
+}
+
+.buy-now {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.hr-distance {
+    margin: 70px 0px;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(239, 182, 182);
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0px auto;
+}
+
+th {
+    background-color: orangered;
+    color: aliceblue;
+}
+
+th,
+td {
+    padding: 25px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(239, 236, 230);
+}
+
+tr:hover {
+    background-color: rgb(241, 220, 180);
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-items img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-items {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gallery-items:hover {
+    border: 2px solid orangered;
+}
+
+.image-title {
+    background-color: rgb(199, 136, 111);
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.gallery-items a {
+    text-decoration: none;
+}
+
+.order form {
+    background-color: rgb(249, 242, 234);
+    margin: 20px 150px;
+    padding: 10px;
+    border: 1px solid rgb(210, 198, 193);
+    color: rgb(146, 42, 4);
+}
+
+input[type="text"],
+input[type="select"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+input[type="submit"] {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px 0px;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+#submit {
+    background-color: orangered;
+    color: aliceblue;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: rgb(148, 40, 1);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: darkgrey;
+    padding: 25px;
+}
+
+@media screen and (max-width: 1400px)
+{
+    table 
+    {
+        width: 60%;
+    }
+    th, td
+    {
+        padding: 20px;
+    }
+    #gallery
+    {
+        flex-wrap: wrap;
+    }
+    .order form
+    {
+        margin: 0px 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    * {
+        font-size: small;
+    }
+    .home h1
+    {
+        font-size: large;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .mahadul {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    table 
+    {
+        width: 60%;
+    }
+
+    th, td 
+    {
+        padding: 5px;
+    }
+    
+    .order form {
+        margin: 20px 20px;
+    }
+}
+
